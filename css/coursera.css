@@ -1,137 +1,155 @@
 body{
-    background-color: aqua;
+    overflow-x: hidden;
 }
-h1{
+
+p, a{
+    font-family: 'Oxygen', sans-serif;
+    color: white;
+}
+
+footer{
+    background-color: #0a043c;
+    height: 300px;
+    color: white;
+}
+.copyright{
+    position: absolute;
+    bottom: 0;
+}
+
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color:#0a043c !important;
+    border-color: #0a043c !important;
+}
+#SERVICOS{
+    background-color: #0a043c;
+}
+.section-h1{
+    font-size: 4rem;
     text-align: center;
 }
-@media only screen and (min-width:992px){
-    .box-set{
-        text-align: center;
-    }
-    .box-left{
-        display: inline-block;
-        border: 1px solid black;
-        background-color: gray;
-        margin-right: 8px;
-    }
-    .box-left-title{
-        font-size:2rem;
-        background-color: pink;
-        border: 1px solid black;
-        float:right;
-        position: relative;
-    }
-    .box-middle{
-        display: inline-block;
-        border: 1px solid black;
-        position: relative;
-        background-color: gray;
-    }
-    .box-middle-title{
-        font-size:2rem;
-        position: relative;
-        border: 1px solid black;
-        float:right;
-        background-color: blue;
-    }
-    .box-right{
-        position: relative;
-        border: 1px solid black;
-        display: inline-block;
-        background-color: gray;
-        margin-left:8px;
-    }
-    .box-right-title{
-        font-size:2rem;
-        float:right;
-        border: 1px solid black;
-        background-color: red;
-        position: relative;
+.servicos-hr{
+    position: relative;
+    right: 50%;
+    border-bottom: 3px solid #000;
+    width: 50%;
+    padding-bottom: 3px;
+}
+.retangle{
+    width: 70px;
+    height: 140px;
+    background-color: #555;
+}
+
+.navbar-color{
+    background-color:#0a043c;
+    border-bottom: 1px solid red;
+}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+    font-size: 3.5rem;
     }
 }
-@media only screen and (min-width:768px) and (max-width:991px){
-    .box-set{
-        text-align: center;
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #5a5a5a;
+  }
+  /* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+  
+  /* Carousel base class */
+  .carousel {
+    margin-bottom: 4rem;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 32rem;
+  }
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+  }
+  
+  
+  /* MARKETING CONTENT
+  -------------------------------------------------- */
+  
+  /* Center align the text within the three columns below the carousel */
+  .marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .marketing h2 {
+    font-weight: 400;
+  }
+  /* rtl:begin:ignore */
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+  /* rtl:end:ignore */
+  
+  
+  /* Featurettes
+  ------------------------- */
+  
+  .featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  
+  /* Thin out the marketing headings */
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    /* rtl:remove */
+    letter-spacing: -.05rem;
+  }
+  
+  
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+  
+  @media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
     }
-    .box-left{
-        display: inline-block;
-        border: 1px solid black;
-        background-color: gray;
-        margin-right: 8px;
+  
+    .featurette-heading {
+      font-size: 50px;
     }
-    .box-left-title{
-        font-size:2rem;
-        background-color: pink;
-        border: 1px solid black;
-        float:right;
-        position: relative;
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
     }
-    .box-middle{
-        display: inline-block;
-        border: 1px solid black;
-        position: relative;
-        background-color: gray;
-    }
-    .box-middle-title{
-        font-size:2rem;
-        position: relative;
-        border: 1px solid black;
-        float:right;
-        background-color: blue;
-    }
-    .box-right{
-        margin-top: 8px;
-        background-color: gray;
-        border: 1px solid black;
-    }
-    .box-right-title{
-        font-size:2rem;
-        float:right;
-        border: 1px solid black;
-        background-color: red;
-        position: relative;
-    }
-}
-@media only screen and (max-width:767px){
-    .box-set{
-        text-align: center;
-    }
-    .box-left{
-        display: inline-block;
-        border: 1px solid black;
-        background-color: gray;
-        margin-bottom: 8px;
-    }
-    .box-left-title{
-        font-size:2rem;
-        background-color: pink;
-        border: 1px solid black;
-        position: relative;
-        float:right;
-    }
-    .box-middle{
-        display: inline-block;
-        border: 1px solid black;
-        background-color: gray;
-    }
-    .box-middle-title{
-        font-size:2rem;
-        position: relative;
-        border: 1px solid black;
-        float:right;
-        background-color: blue;
-    }
-    .box-right{
-        display: inline-block;
-        margin-top: 8px;
-        background-color: gray;
-        border: 1px solid black;
-    }
-    .box-right-title{
-        font-size:2rem;
-        float:right;
-        border: 1px solid black;
-        background-color: red;
-        position: relative;
-    }
-}
+  }
+  @media screen and (max-width: 768px){
+
+  }
+   
