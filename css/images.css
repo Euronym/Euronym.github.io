@@ -1,0 +1,55 @@
+@import url(./main.css);
+
+.images{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0% !important;
+    width: 100%;
+}
+.images-container{
+    background-position: center;
+    width: 25%;
+    height: 25.9375rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.images div:nth-child(1){
+    background-image: url(../images/desktop/image-gallery-milkbottles.jpg);
+    
+}
+.images div:nth-child(2){
+    background-image: url(../images/desktop/image-gallery-orange.jpg);
+   
+}
+.images div:nth-child(3){
+    background-image: url(../images/desktop/image-gallery-cone.jpg);
+    
+}
+.images div:nth-child(4){
+    background-image: url(../images/desktop/image-gallery-sugarcubes.jpg);
+   
+}
+@media only screen and (max-width: 640px){
+    .images-container{
+        width: 50%;
+        height: 12.96875rem;
+    }
+    .images div:nth-child(1){
+        background-image: url(../images/mobile/image-gallery-milkbottles.jpg);
+    }
+    .images div:nth-child(2){
+        background-image: url(../images/mobile/image-gallery-orange.jpg);
+    }
+    .images div:nth-child(3){
+        background-image: url(../images/mobile/image-gallery-cone.jpg);
+    }
+    .images div:nth-child(4){
+        background-image: url(../images/mobile/image-gallery-milkbottles.jpg);
+    }
+}
+@media only screen and (min-width: 641px) and (max-width:1007px){
+    
+}
+@media only screen and (min-width:1008px){
+
+}

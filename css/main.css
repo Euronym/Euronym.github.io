@@ -1,0 +1,30 @@
+*{
+   /* font-family: 'Barlow', sans-serif; */
+   -moz-box-sizing: border-box; 
+   -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+body{
+    margin: 0;
+    overflow-x: hidden;
+    font-size: 1.125rem;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+}
+@media only screen and (max-width: 640px){
+    
+}
+@media only screen and (min-width: 641px) and (max-width:1007px){
+    
+}
+@media only screen and (min-width:1008px){
+
+}
+
+
+/*font-family: 'Fraunces', serif;*/

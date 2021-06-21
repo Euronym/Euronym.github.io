@@ -1,0 +1,54 @@
+@import url(./main.css);
+
+footer{
+    background-color: hsl(168, 34%, 41%);
+    padding: 0% !important;
+    flex-direction: column;
+}
+footer div:first-child{
+    font-size: 1.5rem;
+    color: hsl(212, 27%, 19%);
+    font-family: 'Fraunces', serif;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+footer div:nth-child(2){
+    font-family: 'Barlow', sans-serif;
+
+}
+footer div:nth-child(2) ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+footer div:nth-child(2) ul li{
+    display: inline-block;
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+footer div:nth-child(2) ul li a{
+    color:hsl(212, 27%, 19%);
+    text-decoration: none;
+}
+footer svg{
+    display: inline-block;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 50px;
+}
+.attribution{
+    font-family: 'Barlow', sans-serif;
+}
+.attribution a{
+    color:hsl(212, 27%, 19%);
+    text-decoration: none;
+}
+@media only screen and (max-width: 640px){
+  
+}
+@media only screen and (min-width: 641px) and (max-width:1007px){
+    
+}
+@media only screen and (min-width:1008px){
+
+}

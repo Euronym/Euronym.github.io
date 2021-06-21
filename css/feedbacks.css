@@ -1,0 +1,110 @@
+@import url(./main.css);
+
+.feedbacks{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0%;
+    flex-direction: column;
+    width: 100%;
+}
+.feedbacks h2{
+    font-family: 'Fraunces', serif;
+    color:hsl(232, 10%, 55%);
+}
+.feedback-cards p{
+    margin: 0;
+    color:hsl(213, 9%, 39%);
+}
+.feedback-cards{
+    justify-content: center;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+.feedback-cards img{
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+.feedback-cards > div{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.emily-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.emily-card div{
+    margin-top: 50px;
+}
+.emily-card p:first-child{
+    color:black;
+    font-family: 'Fraunces', serif;
+    margin-bottom:20px;
+
+}
+.tomas-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tomas-card div{
+    margin-top: 50px;
+
+}
+.tomas-card p:first-child{
+    color:black;
+    font-family: 'Fraunces', serif;
+    margin-bottom:20px;
+}
+.jennie-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.jennie-card div{
+    margin-top: 50px;
+
+}
+.jennie-card p:first-child{
+    color:black;
+    font-family: 'Fraunces', serif;
+    margin-bottom:20px;
+}
+@media only screen and (max-width: 640px){
+    .feedback-cards{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .emily-card{ 
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+    .emily-card p:first-child{
+        text-align: center;
+    }
+    .tomas-card{     
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+    .tomas-card p:first-child{
+        text-align: center;
+    }    
+    .jennie-card{
+        width: 100%;
+        flex-direction: column;
+    }
+    .jennie-card p:first-child{
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 641px) and (max-width:1007px){
+    
+}
+@media only screen and (min-width:1008px){
+
+}
