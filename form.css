@@ -8,7 +8,7 @@ h2{
     display: flex;
 }
 .form-info{
-    width: 50%;
+    width: 70%;
     flex-wrap: nowrap;
     justify-content: space-around;
     display: flex;
