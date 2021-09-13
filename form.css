@@ -10,7 +10,7 @@ h2{
 .form-info{
     width: 50%;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     display: flex;
     flex-direction: row;
 }
