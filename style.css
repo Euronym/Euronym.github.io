@@ -1,0 +1,700 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    overflow-x:hidden;
+    scroll-behavior: smooth;
+}
+h3{
+    color: #1E4697;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 24px;
+}
+h3, strong{
+    color: #1E4697;
+}
+#hamburgerNav{
+    display: none;
+}
+body{
+    background-image: url('./images/network-bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-weight: 400;
+    color: black;
+    height: auto;
+    margin: 0;
+}   
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'Oxygen', sans-serif;
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+}
+/*SECTION SOBRE */
+#sobre{
+    flex-direction: column;
+    display: flex;
+    padding: 50px 100px 0 100px;
+}
+hr{
+    margin-top: 0;
+    border: 0;
+    clear:both;
+    display:block;
+    width: 100%;               
+    background-color: black;
+    height: 1px;
+}
+.gercom-img{
+    display: flex;
+    max-width: 35%;
+    height: auto;
+}
+.gercom-box{
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+.curso-box{
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+}
+.img-smart-city{
+    margin-left: 150px;
+    align-self: center;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    display: flex;
+}
+.curso-box-texto{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.curso-box-texto h3{
+    margin-bottom: 0;
+}
+/*SECTION INSCRICOES */
+#inscricoes{
+    padding: 50px 100px 0 100px;
+}
+
+#inscricoes > div{
+    width: 50%;
+}
+#inscricoes > div:first-child{
+    display: flex;
+}
+#inscricoes a{
+    padding: 10px;
+    text-align: center;
+    display: block;
+    background-color: #1E4697;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    width: 300px;
+    height: 50px;
+}
+#inscricoes p{
+    color: black;
+}
+.v1{
+    border-left:2px solid black; 
+    width: 10px;
+    height: 200px;
+    display: flex;
+}
+#inscricoes > div:last-child{
+    display: flex;
+}
+/*SECTION INVESTIMENTO */
+#investimento{
+    padding: 50px 100px 0 100px;
+}
+#investimento > div div{
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    margin-top: 30px;
+}
+#investimento > div div div{
+    color: white;
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: #C0D2F7;
+    width: 250px;
+    height: 350px;
+}
+#investimento > div div div div{
+    font-size: 20px;
+    font-weight: bold;
+    align-content: center;
+    margin: 0;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: #1E4697;
+}
+
+/*SECTION CALENDARIO */
+#calendario{
+    text-justify: inter-word;
+    padding: 50px 100px 0 100px;
+}
+#calendario > div{
+    display: flex;
+    flex-direction: column;
+}
+.calendario-content{
+    align-self: center;
+    border: 1px solid black;
+    border-top:1px solid transparent;
+    margin-bottom: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    width: 600px;
+    flex-direction: column;
+    display: flex;
+}
+#calendario button{
+    align-self: center;
+    align-items: center;
+    width: 600px;
+    font-weight: 500;
+    padding: 10px;
+    height: auto;
+    flex-direction: column;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #1E4697;
+    color: white;
+    display: flex;
+}
+#calendario svg{
+    margin-bottom: 10px;
+    align-self: center;
+}
+.collapsible strong{
+    margin-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+.calendario-content table{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.calendario-content tr td:first-of-type{
+    padding-left: 15px;
+}
+.calendario-content tr td:nth-child(2){
+    text-align: center;
+}
+.calendario-content tr td:last-child{
+    text-align: center;
+}
+.calendario-content td{
+    height: 50px;
+    background-color: #C0D2F7;
+}
+.calendario-content th{
+    height: 50px;
+    background-color: #1E4697;
+    color:white;
+    border-radius: 5px;
+}
+/*SECTION DISCIPLINAS */
+#disciplinas{
+    padding: 50px 100px 0 100px;
+}
+.collapsible {
+    color: #1E4697;
+    text-align: center;
+    background: none;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+  }
+  .active, .collapsible:hover {
+    border-width: 1px;
+    border-color:black;
+    border-style: solid;
+  }
+  .content {
+    margin-bottom: 20px;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.content ul{
+    margin-bottom: 30px;
+}
+.disciplinas-lista{
+    list-style-type: square;
+}
+.disciplinas-lista ul li:first-of-type{
+    list-style-type: disc;
+}
+.disciplinas-lista ul li:last-of-type{
+    list-style-type: none;
+}
+/* SECTION DOCENTES */
+#docentes{
+    padding: 50px 100px 0px 100px;
+}
+/*hero*/
+nav{
+    margin-top: 5px;
+    margin-left: 10%;
+    display: flex;
+    width: 100%;    
+    height: 100px;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav ul li{
+    float: left;
+}
+nav ul li a{
+    margin-left: 10px;
+    font-size: 14px;
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    background-color: #2C57AC;
+}
+header div:first-of-type{
+    z-index: 9999;
+    top: 0;
+    overflow: hidden;
+    padding: 10px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    background-color: #1E4697;
+}
+header div:first-of-type div{
+    display: flex;
+    width: auto;
+    height: 100%;
+    padding: 0;
+    margin: 0%;
+}
+header div:first-of-type div h2{
+    color: white;
+    margin-left: 10px;
+    margin-top: 0;
+    font-size: medium;
+}
+header img{
+    height: 50px;
+    width: 50px;
+}
+header{
+    margin: 0 auto;
+    font-family: 'Oxygen', sans-serif;
+    background-color: #7FA4F1;
+    justify-content: flex-start;
+    flex-direction: column;
+    display: flex;
+    max-width: 1440px;
+    height: 600px;
+}
+.sticky{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+.carrossel{
+    margin-left: 50px;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-self: center;
+    display: flex;
+    width: 80%;
+    height: 500px;
+}
+.disciplinas-lista a{
+    margin-left: 3px;
+    color: black;
+    text-decoration: underline dotted solid;
+}
+.disciplinas-lista a:hover{
+    text-decoration: none;
+}
+.carrossel img{
+    align-self: center;
+    width: 50%;
+    height: auto;
+    display: flex;
+}
+.carrossel img:last-child{
+    margin-left: 30px;
+    max-width: 40%;
+}
+/*SECTION DOCENTES */
+#docentes{
+    padding: 50px 100px 0 100px;
+}
+#docentes div:first-of-type{
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.docentes-card p{
+    margin: 0;
+}
+.docentes-card strong{
+    margin: 0;
+}
+.docentes-card{
+    margin-bottom: 30px;
+    width: 350px;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+}
+.docentes-card div:first-of-type{
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+}
+.docentes-card:nth-child(6) img{
+    height: 100% !important;
+}
+.docentes-card:nth-child(8) img{
+    height: 100% !important;
+}
+.docentes-card div:first-of-type img{
+    display: flex;
+    max-width: 100%;
+    height: auto;
+}
+.docentes-card div:last-of-type{
+    margin-top: 30px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+/*SECTION CONTATOS */
+#contato{
+    padding: 50px 100px 0 100px;
+}
+#contato p{
+    margin-top: 50px;
+    align-self: center;
+}
+.contato-box{
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+}
+.contato-box h3{
+    margin: 0;
+    align-self: center;
+}
+.contato-box form{
+    align-self: center;
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contato-box div{
+    justify-content: space-evenly;
+    flex-direction: row;
+    display: flex;
+}
+.contato-box div input{
+    border-style: solid;
+    border-color: white;
+    background-color: #1E4697;
+    color: white;
+    width: 30%;
+}
+.contato-box input, textarea{
+    border-style: groove;
+    margin-bottom: 30px;
+}
+.contato-box textarea{
+    resize: none;
+    height: 100px;
+    border-radius: 5px;
+}
+.contato-box input{
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+}
+/*SCROLL BACK BUTTON */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #1E4697;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  #myBtn:hover {
+    background-color: #2C57AC; 
+}
+/*RESPONSIVIDADE */
+@media screen and (max-width: 992px){
+    
+}
+@media screen and (max-width:600px){
+    #hamburgerNav{
+        display: flex;
+    }
+    #hamburgerNav div:first-of-type{
+        color: white;
+        display: flex;
+        width: auto;
+        margin: 0%;
+        padding: 0;
+    }
+    h3{
+        font-size: 12px;
+    }
+    body{
+        font-size: 50%;
+    }
+    header div:first-of-type{
+        display: none;
+    }
+    .topnav {
+        height: 50px;
+        overflow: hidden;
+        background-color: #1E4697;
+        position: relative;
+    }
+    .topnav #hamburgerLinks {
+        display: none;
+    }
+    .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+    .topnav a.icon {
+        background:none;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    .active {
+        background-color: #04AA6D;
+        color: white;
+    }
+    .carrossel{
+        margin: 0;
+        width: 100%;
+        justify-content: space-evenly;
+        flex-direction: column-reverse;
+    }
+    .carrossel img:first-of-type{
+        margin: 0;
+        align-self: center;
+        max-width: 100%;
+    }
+    .carrossel img:last-of-type{
+        margin: 0;
+        align-self: center;
+        max-width: 100%;
+    }
+    /*SEÇÃO SOBRE */
+    #sobre{
+        padding: 0;
+    }
+    .curso-box{
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .curso-box-texto{
+        align-self: center;
+        width: 80%;
+    }
+    .img-smart-city{
+        max-width: 80%;
+        margin: 50px 0 50px 0;
+    }
+    /*seção inscricoes */
+    #inscricoes{
+        padding: 0;
+    }
+    #inscricoes h3{
+        text-align: center;
+    }
+    #inscricoes > div{
+        margin: 0;
+        width: 100%;
+    }
+    #inscricoes div:first-of-type div{
+        margin-left: 35px;
+        width: 80%;
+    }
+    #inscricoes a{
+        width: auto;
+        height: 40px;
+        padding-top: 12px;
+    }
+    /*seção investimento */
+    #investimento h3{
+        text-align: center;
+        padding: 0;
+    }
+    #investimento > div div div{
+        height: 200px;
+    }
+    #investimento > div div div div{
+        font-size: 12px;
+    }
+    /* seção calendario*/
+    #calendario{
+        flex-direction: column;
+        display: flex;
+        padding: 0;
+    }
+    #calendario h3{
+        margin-top: 50px;
+        text-align: center;
+    }
+    #calendario > div button{
+        font-size: 12px;
+        width: 100%;
+    }
+    calendario > div table{
+        width: 100%;
+    }
+    #calendario > div{
+        align-self: center;
+        width: 80%;
+    }
+    /*seção disciplinas*/
+    #disciplinas{
+        flex-direction: column;
+        display: flex;
+        padding: 0;
+    }
+    #disciplinas h3{
+        text-align: center ;
+    }
+    #disciplinas > div:first-of-type{
+        align-self: center;
+        width: 80%;
+    }
+    #disciplinas > div:last-of-type{
+        align-items: flex-start;
+        flex-direction: column;
+        align-self: center;
+        width: 100%;
+    }
+    .disciplinas-lista{
+        width: 80%;
+        flex-direction: column;
+        display: flex;
+    }
+    .disciplinas-lista ul{
+        margin: 0;
+        margin-left: 10px;
+        padding: 0;
+        flex-direction: column;
+        display: flex;
+    }
+    #disciplinas button{
+        font-size: 12px;
+    }
+    /*seção docentes */
+    #docentes h3{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    #docentes{
+        flex-direction: column;
+        display: flex;
+        padding: 0;
+    }
+    .docentes-card{
+        flex-direction: column;
+    }
+    #docentes div:first-of-type{
+        align-items: center;
+        flex-direction: column;
+    }
+    #docentes div{
+        align-items: center;
+        flex-direction: column;
+    }
+    .docentes-card div:last-of-type{
+        margin: 0;
+        width: 100px;
+    }
+    /*seção contato */
+    #contato{
+        flex-direction: column;
+        padding: 0;
+        display: flex;
+    }
+    .contato-box h3{
+        text-align: center;
+    }
+    .contato-box form{
+        width: 80%;
+        align-self: center;
+    }
+}
+
