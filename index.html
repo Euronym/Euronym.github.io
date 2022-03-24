@@ -23,20 +23,22 @@
     <header>
         <div id="navbar">
             <div>
-                <img src="./images/itec_logo.png" alt="itec logo">
-                <h2>Instituto de Tecnologia <br>UFPA</h2>
+                <div>
+                    <img src="./images/itec_logo.png" alt="itec logo">
+                    <h2>Instituto de Tecnologia <br>UFPA</h2>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#sobre">SOBRE CURSO</a></li>
+                        <li><a href="#inscricoes">INSCRIÇÕES</a></li>
+                        <li><a href="#investimento">INVESTIMENTO</a></li>
+                        <li><a href="#calendario">CALENDÁRIOS</a></li>
+                        <li><a href="#disciplinas">DISCIPLINAS</a></li>
+                        <li><a href="#docentes">DOCENTES</a></li>
+                        <li><a href="#contato">CONTATO</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#sobre">SOBRE CURSO</a></li>
-                    <li><a href="#inscricoes">INSCRIÇÕES</a></li>
-                    <li><a href="#investimento">INVESTIMENTO</a></li>
-                    <li><a href="#calendario">CALENDÁRIOS</a></li>
-                    <li><a href="#disciplinas">DISCIPLINAS</a></li>
-                    <li><a href="#docentes">DOCENTES</a></li>
-                    <li><a href="#contato">CONTATO</a></li>
-                </ul>
-            </nav>
         </div>
         <div id="hamburgerNav" class="topnav">
             <div>
@@ -51,9 +53,9 @@
                 <a href="#docentes">DOCENTES</a>
                 <a href="#contato">CONTATO</a>
             </div>
-                <a href="javascript:void(0);" class="icon" onclick="hamburger()">
-                    <i class="fa fa-bars"></i>
-                </a>
+            <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
         <div class="carrossel">
             <img src="./images/hero.png">
@@ -62,27 +64,33 @@
     </header>
     <main>
         <section id="sobre">
+            <div class="introducao-curso-box">
+                <div class="introducao-curso-texto">
+                    <h3>Sobre o Curso</h3>
+                    <div>
+                        O curso de pós-graduação latu-senso GTIcs é organizado pelo Laboratório de Cidades
+                        Inteligentes e Sustentáveis (LaCiS) em parceria com outras universidades e a empresa Konker
+                    </div>
+                </div>
+            </div>
             <div class="curso-box">
                 <div class="curso-box-texto">
-                    <h3>Gestão de Tecnologias para Cidades
-                        Inteligentes e Sustentáveis: Inteligência
-                        Artificial, Computação em nuvem e
-                        Internet das Coisas</h3>
+                    <h3>Gestão de Tecnologias para Cidades Inteligentes e Sustentáveis (GTICs): Inteligência Artificial,
+                        Computação em nuvem e Internet das Coisas</h3>
                     <div>
-                        A crescente demanda por serviços contínuos e em tempo real para Cidade Inteligentes e
-                        Sustentáveis em conjunto com a popularização dos dispositivos móveis, Internet das Coisas (IoT),
-                        computação em nuvem e Inteligência Artificial (IA) têm criado oportunidades no mercado e na
-                        academia
-                        para o desenvolvimento de ecossistemas eficientes para serviços móveis em tempo real. O governo,
-                        a
-                        indústria, a academia e a sociedade já perceberam a importância da nova era tecnológica e
-                        iniciaram o
-                        processo de migração para cidades inteligentes e sustentáveis. Iniciativas nos Estados Unidos,
-                        Europa,
-                        Ásia e mesmo no Brasil através do Ministério da Ciência, Tecnologia e Inovações / Portaria nº
-                        1.122
-                        estimulam o desenvolvimento de Tecnologias da Informação e Comunicação (TIC) e a criação de
-                        Cidades
+                        O curso tem como objetivo formar profissionais em GTICs capazes de atuar com forte embasamento
+                        conceitual e prático, e de forma inovadora no mercado,
+                        através da análise e visão estratégica dos conhecimentos em Inteligência Artificial (IA),
+                        Computação em nuvem e
+                        Internet das Coisas (IoT).
+                        O curso de pós-graduação latu-senso GTICs nasceu da demanda para qualificar profissionais em
+                        face a crescente demanda por serviços contínuos e em tempo real para Cidade Inteligentes e
+                        Sustentáveis em conjunto
+                        com a popularização dos dispositivos móveis, IoT, computação em nuvem e IA. O crescimento de
+                        tais tecnologias têm criado
+                        oportunidades no mercado e na academia para o desenvolvimento de ecossistemas eficientes para
+                        serviços móveis em tempo real, os quais serão abordados durante o curso de pós-graduação
+                        latu-senso GTICs.
                     </div>
                 </div>
                 <div class="img-smart-city">
@@ -95,8 +103,9 @@
             <div>
                 <div>
                     <a href="">inscreva-se no curso</a>
-                    <p><strong>Período de inscrição</strong>:</p>
+                    <p><strong>Período de inscrição</strong>: 15 de Maio de 2022</p>
                     <p><strong>Duração do Curso</strong>: 01/05/2022 à 31/10/2023</p>
+                    <p><strong>Carga Horária</strong>: 370 horas (148 teórica e 222 prática)</p>
                     <p><strong>Horário</strong>: 08:00 à 18:00</p>
                 </div>
             </div>
@@ -104,22 +113,33 @@
         <section id="investimento">
             <h3>Investimento</h3>
             <div>
-                <div>
-                    <div>
-                        <div>
-                            Valor
-                        </div>
+                <div class="investimento-card">
+                    <div class="investimento-card-title">
+                        Valor
                     </div>
-                    <div>
-                        <div>
-                            Vantagens
-                        </div>
+                    <divc class="investimento-card-content">
+                        <p>18 parcelas mensais de </p><br>
+                        <p class="valor-investimento">R$ 550,00</p>
+                        <p>+ matricula de R$ 90,00</p>
+                </div>
+                <div class="investimento-card">
+                    <div class="investimento-card-title">
+                        Vantagens
                     </div>
-                    <div>
-                        <div>
-                            Facilidades de <br>
-                            Pagamento
-                        </div>
+                    <div class="investimento-card-content">
+                        <ul>
+                            <li>Aulas remotas com professores renomados no Brasil</li>
+                            <li>Kit IoT individual para o desenvolvimento das atividades</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="investimento-card">
+                    <div class="investimento-card-title">
+                        Facilidades de <br>
+                        Pagamento
+                    </div>
+                    <div class="investimento-card-content">
+
                     </div>
                 </div>
             </div>
@@ -288,8 +308,9 @@
                     <li><strong>Introdução às Redes de Computadores</strong>:Carga horária: 16 (teórica) 4 (prática)
                     </li>
                     <ul>
-                        <li><strong>Professor</strong>:<a target="_blank"
-                                href="http://lattes.cnpq.br/3794198610723464">Marcos Cesar da Rocha Seruffo</a></li>
+                        <li><strong>Professor(es) previsto(s)</strong>:<a target="_blank"
+                                href="http://lattes.cnpq.br/3794198610723464">Marcos Cesar da Rocha Seruffo (UFPA)</a>
+                        </li>
                         <li><button type="button" class="collapsible">
                                 <svg width="11" height="8" viewBox="0 0 11 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -326,7 +347,8 @@
                     </ul>
                     <li><strong>TCP/IP Prático</strong>:Carga horária: 4 (teórica) 16 (prática)</li>
                     <ul>
-                        <li><strong>Professor</strong>:<a target="_blank" href="">Diego Lisboa Cardoso</a></li>
+                        <li><strong>Professor(es) previsto(s)</strong>:<a target="_blank"
+                                href="http://lattes.cnpq.br/0507944343674734">Diego Lisboa Cardoso (UFPA)</a></li>
                         <li><button type="button" class="collapsible">
                                 <svg width="11" height="8" viewBox="0 0 11 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -359,7 +381,9 @@
                     <li><strong>Programação para Redes de Computadores</strong>:Carga horária: 10 (teórica) 20 (prática)
                     </li>
                     <ul>
-                        <li><strong>Professor</strong>:<a href="">Helder May Nunes da Silva Oliveira</a></li>
+                        <li><strong>Professor(es) previsto(s)</strong>:<a target="_blank"
+                                href="http://lattes.cnpq.br/1468872219964148">Helder May Nunes da Silva Oliveira
+                                (UFPA)</a></li>
                         <li><button type="button" class="collapsible">
                                 <svg width="11" height="8" viewBox="0 0 11 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -397,7 +421,8 @@
                     </ul>
                     <li><strong>Redes Definidas por Software</strong>:Carga horária: 14 (teórica) 6 (prática)</li>
                     <ul>
-                        <li><strong>Professor</strong>:<a href="">Antonio Jorge Gomes Abelém</a></li>
+                        <li><strong>Professor(es) previsto(s)</strong>:<a target="_blank"
+                                href="http://lattes.cnpq.br/5376253015721742">Antonio Jorge Gomes Abelém (UFPA)</a></li>
                         <li>
                             <button type="button" class="collapsible">
                                 <svg width="11" height="8" viewBox="0 0 11 8" fill="none"
@@ -444,8 +469,9 @@
                     <li><strong>Virtualização de Redes e Sistemas Computacionais</strong>:Carga horária: 4 (teórica) 16
                         (prática)</li>
                     <ul>
-                        <li><strong>Professor</strong>:<a target="_blank"
-                                href="http://lattes.cnpq.br/8273198217435163">Denis Lima do Rosário</a></li>
+                        <li><strong>Professor(es) previsto(s)</strong>:<a target="_blank"
+                                href="http://lattes.cnpq.br/8273198217435163">Denis Lima do Rosário (UFPA)</a> e<a
+                                target="_blank" href="">Cristiano Bonato Both (UNISSINOS)</a> </li>
                         <li><button type="button" class="collapsible">
                                 <svg width="11" height="8" viewBox="0 0 11 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -492,9 +518,11 @@
                                 </ul>
                             </div>
                     </ul>
-                    <li><strong>Computação em Nuvem I:Carga horária</strong>: 10 (teórica) 8 (prática)</li>
+                    <li><strong>Computação em Nuvem I</strong>:Carga horária: 10 (teórica) 8 (prática)</li>
                     <ul>
-                        <li><strong>Professor</strong>:<a href="">Eduardo Coelho Cerqueira</a></li>
+                        <li><strong>Professor(es) previsto(s)</strong>:<a target="_blank"
+                                href="http://lattes.cnpq.br/1028151705135221">Eduardo Coelho Cerqueira (UFPA)</a> e<a
+                                target="_blank" href="">Carlos Ferraz (UFPE)</a></li>
                         <li><button type="button" class="collapsible">
                                 <svg width="11" height="8" viewBox="0 0 11 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -544,9 +572,10 @@
                                 </ul>
                             </div>
                     </ul>
-                    <li><strong>Computação em Nuvem II:Carga horária</strong>: 10 (teórica) 10 (prática)</li>
+                    <li><strong>Computação em Nuvem II</strong>:Carga horária: 10 (teórica) 10 (prática)</li>
                     <ul>
-                        <li><strong>Professor</strong>:<a href="">Marcelino Silva da Silva</a></li>
+                        <li><strong>Professor(es) previsto(s)</strong>:<a target="_blank"
+                                href="http://lattes.cnpq.br/7080513172499497">Marcelino Silva da Silva (UFOPA)</a></li>
                         <li><button type="button" class="collapsible"><svg width="11" height="8" viewBox="0 0 11 8"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10.0348 4.04072L0.277501 0.545716L0.257323 7.47887L10.0348 4.04072Z"
@@ -581,9 +610,11 @@
                                 </ul>
                             </div>
                     </ul>
-                    <li><strong>Segurança da Informação:Carga horária</strong>: 6 (teórica) 10 (prática)</li>
+                    <li><strong>Segurança da Informação</strong>:Carga horária: 6 (teórica) 10 (prática)</li>
                     <ul>
-                        <li><strong>Professor</strong>:<a href="">Alan Douglas Bento da Costa</a></li>
+                        <li><strong>Professor(es) previsto(s)</strong>:<a target="_blank"
+                                href="http://lattes.cnpq.br/2599065838802816">Allan Douglas Bento da Costa (UFRA)</a>
+                            e<a target="_blank" href="">Hugo kobayashi (UNIFESSPA)</a></li>
                         <li><button type="button" class="collapsible"><svg width="11" height="8" viewBox="0 0 11 8"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10.0348 4.04072L0.277501 0.545716L0.257323 7.47887L10.0348 4.04072Z"
@@ -616,7 +647,9 @@
                     <li><strong>Técnicas de IA para Cidades Inteligentes e Sustentáveis</strong>: Carga horária: 10
                         (teórica) 17 (prática)</li>
                     <ul>
-                        <li><strong>Professor</strong>:<a href="">Helder May Nunes da Silva Oliveira</a></li>
+                        <li><strong>Professor(es) previsto(s)</strong>:<a target="_blank"
+                                href="http://lattes.cnpq.br/1468872219964148">Helder May Nunes da Silva Oliveira
+                                (UFPA)</a> e<a target="_blank" href="">Allan Mariano de Souza (UNICAMP)</a></li>
                         <li><button type="button" class="collapsible">
                                 <svg width="11" height="8" viewBox="0 0 11 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -653,7 +686,9 @@
                     <li><strong>Técnicas de Aprendizado Profundo para Cidades Inteligentes e Sustentáveis</strong>:
                         Carga horária: 10 (teórica) 17 (prática)</li>
                     <ul>
-                        <li><strong>Professor</strong>:<a href="">Helder May Nunes da Silva Oliveira</a></li>
+                        <li><strong>Professor(es) previsto(s)</strong>:<a target="_blank"
+                                href="http://lattes.cnpq.br/1468872219964148">Helder May Nunes da Silva Oliveira
+                                (UFPA)</a> e<a target="_blank" href="">Allan Mariano de Souza (UNICAMP)</a></li>
                         <li><button type="button" class="collapsible">
                                 <svg width="11" height="8" viewBox="0 0 11 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -699,10 +734,11 @@
                                 </ul>
                             </div>
                     </ul>
-                    <li><strong>Inovação e Empreendedorismo:Carga horária</strong>: 10 (teórica) 5 (prática)</li>
+                    <li><strong>Inovação e Empreendedorismo</strong>:Carga horária: 10 (teórica) 5 (prática)</li>
                     <ul>
-                        <li><strong>Professor</strong>:<a target="_blank"
-                                href="http://lattes.cnpq.br/3179032920191179">Adailton Magalhães Lima</a></li>
+                        <li><strong>Professor(es) previsto(s)</strong>:<a target="_blank"
+                                href="http://lattes.cnpq.br/3179032920191179">Adailton Magalhães Lima (UFPA)</a> e<a
+                                target="_blank" href="">Rodrigo Quites Reis (UFPA)</a></li>
                         <li><button type="button" class="collapsible">
                                 <svg width="11" height="8" viewBox="0 0 11 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -739,10 +775,10 @@
                                 </ul>
                             </div>
                     </ul>
-                    <li><strong>Metodologia:Carga horária</strong>: 10 (teórica) 10 (prática)</li>
+                    <li><strong>Metodologia</strong>:Carga horária: 10 (teórica) 10 (prática)</li>
                     <ul>
-                        <li><strong>Professor</strong>:<a target="_blank"
-                                href="http://lattes.cnpq.br/8273198217435163">Denis Lima do Rosário</a></li>
+                        <li><strong>Professor(es) previsto(s)</strong>:<a target="_blank"
+                                href="http://lattes.cnpq.br/8273198217435163">Denis Lima do Rosário (UFPA)</a></li>
                         <li><button type="button" class="collapsible">
                                 <svg width="11" height="8" viewBox="0 0 11 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -774,7 +810,8 @@
                     <li><strong>Princípios de Operação e Projeto de Sistemas IoT</strong>:Carga horária: 10 (teórica) 8
                         (prática)</li>
                     <ul>
-                        <li><strong>Professor</strong>:<a href="">Glauco Estácio Gonçalves</a></li>
+                        <li><strong>Professor(es) previsto(s)</strong>:<a target="_blank"
+                                href="http://lattes.cnpq.br/6157118581200722">Glauco Estácio Gonçalves (UFPA)</a></li>
                         <li><button type="button" class="collapsible">
                                 <svg width="11" height="8" viewBox="0 0 11 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -807,7 +844,9 @@
                     </ul>
                     <li><strong>Tecnologias de Comunicação em IoT</strong>:Carga horária: 14 (teórica) 4 (prática)</li>
                     <ul>
-                        <li><strong>Professor</strong>:<a href="">Eduardo Coelho Cerqueira</a></li>
+                        <li><strong>Professor(es) previsto(s)</strong>:<a target="_blanK"
+                                href="http://lattes.cnpq.br/1028151705135221">Eduardo Coelho Cerqueira (UFPA)</a> e<a
+                                target="_blank" href="">Leandro Aparecido Villas (UNICAMP)</a></li>
                         <li><button type="button" class="collapsible">
                                 <svg width="11" height="8" viewBox="0 0 11 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -845,7 +884,8 @@
                     <li><strong>Programação de Sistemas Embarcados para IoT</strong>:Carga horária: 8 (teórica) 16
                         (prática)</li>
                     <ul>
-                        <li><strong>Professor</strong>:<a href="">Thiego Maciel Nunes</a></li>
+                        <li><strong>Professor(es) previsto(s)</strong>:<a style="color: red;" href="">Thiego Maciel
+                                Nunes (IFAP)</a> e<a target="_blank" href="">Daniel Ludovico Guidoni (UFSJ)</a></li>
                         <li><button type="button" class="collapsible">
                                 <svg width="11" height="8" viewBox="0 0 11 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -878,7 +918,9 @@
                     </ul>
                     <li><strong>Projeto de IoT</strong>:Carga horária: 2 (teórica) 25 (prática)</li>
                     <ul>
-                        <li><strong>Professor</strong>:<a href="">Eduardo Coelho Cerqueira</a></li>
+                        <li><strong>Professor(es) previsto(s)</strong>:<a target="_blank"
+                                href="http://lattes.cnpq.br/1028151705135221">Eduardo Coelho Cerqueira (UFPA)</a> e <a
+                                target="_blank" href="">Luis Gonzalez (konker)</a></li>
                         <li><button type="button" class="collapsible">
                                 <svg width="11" height="8" viewBox="0 0 11 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -912,7 +954,7 @@
                     </ul>
                     <li><strong>Monografia de Trabalho de Conclusão de Curso</strong>:Carga horária: 30 (prática)</li>
                     <ul>
-                        <li><strong>Professor</strong>:Vários professores</li>
+                        <li><strong>Professor</strong>: Orientador à escolha do aluno</li>
                         <li><button type="button" class="collapsible">
                                 <svg width="11" height="8" viewBox="0 0 11 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -949,8 +991,11 @@
                         <img src="./images/professores/allan.jpeg">
                     </div>
                     <div>
-                        <p><strong>Nome</strong>: Allan Costa</p>
+                        <p><strong>Nome</strong>: Allan Costa (UFRA) </p>
                         <p><strong>Titulação</strong>: Doutorado</p>
+                        <a target="_blank" href="http://lattes.cnpq.br/2599065838802816">
+                            <img src="./images/Lattes-logo.png">
+                        </a>
                     </div>
                 </div>
                 <div class="docentes-card">
@@ -958,8 +1003,11 @@
                         <img src="./images/professores/seruffo.jpeg">
                     </div>
                     <div>
-                        <p><strong>Nome</strong>: Marcos Seruffo</p>
+                        <p><strong>Nome</strong>: Marcos Seruffo (UFPA)</p>
                         <p><strong>Titulação</strong>: Doutorado</p>
+                        <a target="_blank" href="http://lattes.cnpq.br/3794198610723464">
+                            <img src="./images/Lattes-logo.png">
+                        </a>
                     </div>
                 </div>
                 <div class="docentes-card">
@@ -967,8 +1015,11 @@
                         <img src="./images/professores/thiego.png">
                     </div>
                     <div>
-                        <p><strong>Nome</strong>: Thiego Nunes</p>
+                        <p><strong>Nome</strong>: Thiego Nunes (IFAP)</p>
                         <p><strong>Titulação</strong>: Mestrado</p>
+                        <a href="">
+                            <img src="./images/Lattes-logo.png">
+                        </a>
                     </div>
                 </div>
                 <div class="docentes-card">
@@ -976,8 +1027,11 @@
                         <img src="./images/professores/adailton2.png">
                     </div>
                     <div>
-                        <p><strong>Nome</strong>: Adailton Lima</p>
+                        <p><strong>Nome</strong>: Adailton Lima (UFPA)</p>
                         <p><strong>Titulação</strong>: Doutorado</p>
+                        <a href="">
+                            <img src="./images/Lattes-logo.png">
+                        </a>
                     </div>
                 </div>
                 <div class="docentes-card">
@@ -985,8 +1039,11 @@
                         <img src="./images/professores/abelem.jpeg">
                     </div>
                     <div>
-                        <p><strong>Nome</strong>: Antonio Abelém</p>
+                        <p><strong>Nome</strong>: Antonio Abelém (UFPA)</p>
                         <p><strong>Titulação</strong>: Doutorado</p>
+                        <a target="_blank" href="http://lattes.cnpq.br/5376253015721742">
+                            <img src="./images/Lattes-logo.png">
+                        </a>
                     </div>
                 </div>
                 <div class="docentes-card">
@@ -994,8 +1051,11 @@
                         <img src="./images/professores/denis.jpeg">
                     </div>
                     <div>
-                        <p><strong>Nome</strong>: Denis Rosário</p>
+                        <p><strong>Nome</strong>: Denis Rosário (UFPA)</p>
                         <p><strong>Titulação</strong>: Doutorado</p>
+                        <a target="_blank" href="http://lattes.cnpq.br/8273198217435163">
+                            <img src="./images/Lattes-logo.png">
+                        </a>
                     </div>
                 </div>
                 <div class="docentes-card">
@@ -1003,8 +1063,11 @@
                         <img src="./images/professores/Diego.jpeg">
                     </div>
                     <div>
-                        <p><strong>Nome</strong>: Diego Cardoso</p>
+                        <p><strong>Nome</strong>: Diego Cardoso (UFPA)</p>
                         <p><strong>Titulação</strong>: Doutorado</p>
+                        <a target="_blank" href="http://lattes.cnpq.br/0507944343674734">
+                            <img src="./images/Lattes-logo.png">
+                        </a>
                     </div>
                 </div>
                 <div class="docentes-card">
@@ -1012,17 +1075,23 @@
                         <img src="./images/professores/cerqueira.png">
                     </div>
                     <div>
-                        <p><strong>Nome</strong>: Eduardo Cerqueira</p>
+                        <p><strong>Nome</strong>: Eduardo Cerqueira (UFPA)</p>
                         <p><strong>Titulação</strong>: Doutorado</p>
+                        <a target="_blank" href="http://lattes.cnpq.br/1028151705135221">
+                            <img src="./images/Lattes-logo.png">
+                        </a>
                     </div>
                 </div>
                 <div class="docentes-card">
                     <div>
-                        <img src="./images/professores/glauco.png">
+                        <img src="./images/professores/glauco.jpeg">
                     </div>
                     <div>
-                        <p><strong>Nome</strong>: Glauco Gonçalves</p>
+                        <p><strong>Nome</strong>: Glauco Gonçalves (UFPA)</p>
                         <p><strong>Titulação</strong>: Doutorado</p>
+                        <a target="_blank" href="http://lattes.cnpq.br/6157118581200722">
+                            <img src="./images/Lattes-logo.png">
+                        </a>
                     </div>
                 </div>
                 <div class="docentes-card">
@@ -1030,8 +1099,11 @@
                         <img src="./images/professores/helder.jpg">
                     </div>
                     <div>
-                        <p><strong>Nome</strong>: Helder Oliveira</p>
+                        <p><strong>Nome</strong>: Helder Oliveira (UFPA)</p>
                         <p><strong>Titulação</strong>: Doutorado</p>
+                        <a target="_blank" href="http://lattes.cnpq.br/1468872219964148">
+                            <img src="./images/Lattes-logo.png">
+                        </a>
                     </div>
                 </div>
                 <div class="docentes-card">
@@ -1039,8 +1111,95 @@
                         <img src="./images/professores/marcelino.png">
                     </div>
                     <div>
-                        <p><strong>Nome</strong>: Marcelino Silva</p>
+                        <p><strong>Nome</strong>: Marcelino Silva (UFOPA)</p>
                         <p><strong>Titulação</strong>: Doutorado</p>
+                        <a target="_blank" href="http://lattes.cnpq.br/7080513172499497">
+                            <img src="./images/Lattes-logo.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="docentes-card">
+                    <div>
+                        <img src="./images/professores/allanMariano.jpeg">
+                    </div>
+                    <div>
+                        <p><strong>Nome</strong>: Allan Mariano (UNICAMP)</p>
+                        <p><strong>Titulação</strong>: Doutorado</p>
+                        <a target="_blank" href="http://lattes.cnpq.br/4615959094966133">
+                            <img src="./images/Lattes-logo.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="docentes-card">
+                    <div>
+                        <img src="./images/professores/danidlGuidoni.jpeg">
+                    </div>
+                    <div>
+                        <p><strong>Nome</strong>: Daniel Guidoni (UFSJ)</p>
+                        <p><strong>Titulação</strong>: Doutorado</p>
+                        <a target="_blank" href="http://lattes.cnpq.br/7122552927617910">
+                            <img src="./images/Lattes-logo.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="docentes-card">
+                    <div>
+                        <img src="./images/professores/leandroVillas.jpeg">
+                    </div>
+                    <div>
+                        <p><strong>Nome</strong>: Leandro Villas (UNICAMP)</p>
+                        <p><strong>Titulação</strong>: Doutorado</p>
+                        <a target="_blank" href="http://lattes.cnpq.br/9830590737740134">
+                            <img src="./images/Lattes-logo.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="docentes-card">
+                    <div>
+                        <img src="./images/professores/luizGonzalez.jpeg">
+                    </div>
+                    <div>
+                        <p><strong>Nome</strong>: Luiz Gonzales (konker)</p>
+                        <p><strong>Titulação</strong>: Doutorado</p>
+                        <a href="http://lattes.cnpq.br/4910241356954777" target="_blank">
+                            <img src="./images/Lattes-logo.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="docentes-card">
+                    <div>
+                        <img src="./images/professores/rodrigoReis.jpeg">
+                    </div>
+                    <div>
+                        <p><strong>Nome</strong>: Rodrigo Reis (UFPA)</p>
+                        <p><strong>Titulação</strong>: Doutorado</p>
+                        <a href="http://lattes.cnpq.br/9839778710074372" target="_blank">
+                            <img src="./images/Lattes-logo.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="docentes-card">
+                    <div>
+                        <img src="./images/professores/carlosFerraz.jpg">
+                    </div>
+                    <div>
+                        <p><strong>Nome</strong>: Carlos Ferraz (UFPE)</p>
+                        <p><strong>Titulação</strong>: Doutorado</p>
+                        <a target="_blank" href="http://lattes.cnpq.br/7716805104151473">
+                            <img src="./images/Lattes-logo.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="docentes-card">
+                    <div>
+                        <img src="./images/professores/cristiano.jpg">
+                    </div>
+                    <div>
+                        <p><strong>Nome</strong>: Cristiano Both (Unisinos)</p>
+                        <p><strong>Titulação</strong>: Doutorado</p>
+                        <a target="_blank" href="">
+                            <img src="./images/Lattes-logo.png">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -1059,7 +1218,6 @@
                 </form>
             </div>
         </section>
-        <a href="https://www.flaticon.com/free-icons/iot" title="iot icons">Iot icons created by Freepik - Flaticon</a>
     </main>
     <script type="text/javascript" src="script.js"></script>
 </body>

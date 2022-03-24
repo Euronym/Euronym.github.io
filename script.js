@@ -1,10 +1,13 @@
+window.addEventListener('scroll', navbar);
+window.addEventListener('scroll', scrollFunction);
+
 // função para fixar a navbar
-window.onscroll = function () { myFunction() };
+window.onscroll = function () { navbar()};
 
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 
-function myFunction() {
+function navbar() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
   }
