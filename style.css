@@ -587,11 +587,8 @@ header{
 }
 @media screen and (max-width:600px){
     body{
-        font-size: 50%;
+        font-size: 16px;
         overflow-x: hidden;
-    }
-    h3{
-        font-size: 12px;
     }
     #navbar{
         display: none;
@@ -601,6 +598,7 @@ header{
         display: flex;
     }
     #hamburgerNav div:first-of-type{
+        font-size: 12px;
         color: white;
         display: flex;
         width: auto;
@@ -746,7 +744,7 @@ header{
     }
     .investimento-card{
         padding: 12px;
-        font-size: 12px;
+        font-size: 18px;
         margin: 0 0 50px 0;
         width: 100%;
         height: 300px;
@@ -769,11 +767,12 @@ header{
         text-align: center;
     }
     .calendario-content{
+        font-size: 14px;
         width: 100%;
     }
     #calendario > div button{
         padding: 5px;
-        font-size: 12px;
+        font-size: 18px;
         width: 100%;
     }
     #calendario > div{
@@ -823,7 +822,7 @@ header{
     }
     #disciplinas button{
         text-align: left;
-        font-size: 10px;
+        font-size: 16px;
     }
     /*seção docentes */
     #docentes h3{
@@ -883,7 +882,7 @@ header{
     }
     .redes-sociais-links a{
         padding: 10px 0 0 0;
-        font-size: 12px;
+        font-size: 18px;
         width: 40px;
         height: 40px;
     }
