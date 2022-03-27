@@ -8,8 +8,8 @@ html{
 h3{
     color: #1E4697;
     font-weight: 700;
+    margin-bottom: 15px;
     font-size: 24px;
-    margin-bottom: 30px;
 }
 h3, strong{
     color: #1E4697;
@@ -48,6 +48,7 @@ hr{
     width: 100%;               
     background-color: black;
     height: 1px;
+    margin-bottom: 15px;
 }
 .introducao-curso-box{
     flex-wrap: wrap;
@@ -56,9 +57,13 @@ hr{
     margin-bottom: 100px;
 }
 .introducao-curso-texto{
+    margin-right: 80px;
     display: flex;
     flex-direction: column;
     width: 50%;
+}
+.introducao-curso-texto h3{
+    align-self: flex-end;
 }
 .curso-box{
     justify-content: flex-start;
@@ -176,8 +181,6 @@ hr{
 }
 .calendario-content{
     align-self: center;
-    border: 1px solid black;
-    border-top:1px solid transparent;
     margin-bottom: 20px;
     max-height: 0;
     overflow: hidden;
@@ -214,10 +217,12 @@ hr{
     height: 50px;
     background-color: white;
 }
+.calendario-content{
+    background-color: #7FA4F1;
+}
 .calendario-content table{
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
 }
 .calendario-content tr td:first-of-type{
     padding-left: 15px;
@@ -464,6 +469,9 @@ header{
     display: flex;
     flex-direction: column;
 }
+.docentes-card a{
+    width: 25px;
+}
 /*SECTION CONTATOS */
 #contato{
     padding: 50px 100px 0 100px;
@@ -516,6 +524,44 @@ header{
     width: 100%;
     height: 50px;
 }
+.redes-sociais{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.redes-sociais h4{
+    color: #1E4697;
+}
+.redes-sociais-links{
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    justify-content: space-between;
+}
+.redes-sociais-links a{
+    border-style: solid;
+    border-radius: 5px;
+    padding: 25px 0 0 0;
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+}
+.redes-sociais-links a:nth-child(1){
+   background-color: #1E4697; 
+}
+.redes-sociais-links a:nth-child(2){
+    background-color: #2C57AC;
+}
+.redes-sociais-links a:nth-child(3){
+    background-color: #7FA4F1;
+}
 /*SCROLL BACK BUTTON */
 #myBtn {
     display: none;
@@ -540,8 +586,18 @@ header{
     
 }
 @media screen and (max-width:600px){
+    body{
+        font-size: 50%;
+        overflow-x: hidden;
+    }
+    h3{
+        font-size: 12px;
+    }
+    #navbar{
+        display: none;
+    }
     #hamburgerNav{
-        height: 70px;
+        height: auto;
         display: flex;
     }
     #hamburgerNav div:first-of-type{
@@ -556,26 +612,17 @@ header{
         padding: 0;
     }
     #hamburgerNav div:first-of-type img{
+        margin-top: 3px;
         max-width: 30%;
-    }
-    h3{
-        font-size: 12px;
-    }
-    body{
-        font-size: 50%;
-        overflow-x: hidden;
-    }
-    header div:first-of-type{
-        display: none;
+        height: 80%;
     }
     .topnav {
-        background-color: #1E4697;
         position: relative;
     }
     #hamburgerLinks a{
         font-size: 70%;
     }
-    .topnav #hamburgerLinks {
+    #hamburgerLinks {
         border-top-right-radius: 15px;
         z-index: 9999;
         background-color: #C0D2F7;
@@ -603,8 +650,7 @@ header{
         color: black;
     }
     .active {
-        background-color: #04AA6D;
-        color: white;
+        background: none;
     }
     .carrossel{
         margin: 0;
@@ -615,17 +661,28 @@ header{
     .carrossel img:first-of-type{
         margin: 0;
         align-self: center;
+        width: 80%;
         max-width: 100%;
         height: auto;
     }
     .carrossel img:last-of-type{
         margin: 0;
         align-self: center;
+        width: 80%;
         max-width: 100%;
     }
     /*SEÇÃO SOBRE */
     #sobre{
         padding: 0;
+    }
+    .introducao-curso-box{
+        justify-content: center;
+        display: flex;
+        margin: 30px 0 30px 0;
+    }
+    .introducao-curso-texto{
+        width: 80%;
+        margin: 0;
     }
     .curso-box{
         align-items: center;
@@ -636,63 +693,87 @@ header{
         width: 80%;
     }
     .img-smart-city{
-        display: flex;
         justify-content: center;
-        margin: 50px 0 0 0;
-        align-self: center;
+        border-radius: 0;
+        display: flex;
         width: 80%;
+        margin: 0 0 30px 0;
     }
     .img-smart-city img{
-        align-self: center;
-        max-width: 80%;
+        max-width: 100%;
         height: auto;
     }
     /*seção inscricoes */
     #inscricoes{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        flex-direction: column;
+        display: flex;
         padding: 0;
     }
     #inscricoes h3{
         text-align: center;
     }
     #inscricoes > div{
+        align-self: center;
         margin: 0;
-        width: 100%;
-    }
-    #inscricoes div:first-of-type div{
-        margin-left: 35px;
         width: 80%;
     }
-    #inscricoes a{
+    #inscricoes div:first-of-type div{
         width: auto;
-        height: 40px;
-        padding-top: 12px;
+    }
+    #inscricoes a{
+        width: 100px;
+        height: 25px;
+        padding: 5px;
     }
     /*seção investimento */
-    #investimento h3{
-        text-align: center;
+    #investimento{
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
         padding: 0;
     }
-    #investimento > div div div{
-        height: 200px;
+    #investimento h3{
+        text-align: center;
     }
-    #investimento > div div div div{
+    #investimento > div{
+        align-self: center;
+        padding: 0;
+        margin: 0;
+        width: 80%;
+        flex-direction: column;
+    }
+    .investimento-card{
+        padding: 12px;
         font-size: 12px;
+        margin: 0 0 50px 0;
+        width: 100%;
+        height: 300px;
+    }
+    .investimento-card-title{
+        font-size: 20px;
+    }
+    .investimento-card:last-of-type{
+        margin-bottom: 0;
     }
     /* seção calendario*/
     #calendario{
         flex-direction: column;
         display: flex;
         padding: 0;
+        margin-bottom: 30px;
     }
     #calendario h3{
         margin-top: 50px;
         text-align: center;
     }
-    #calendario > div button{
-        font-size: 12px;
+    .calendario-content{
         width: 100%;
     }
-    calendario > div table{
+    #calendario > div button{
+        padding: 5px;
+        font-size: 12px;
         width: 100%;
     }
     #calendario > div{
@@ -705,33 +786,44 @@ header{
         display: flex;
         padding: 0;
     }
+    #disciplinas svg{
+        width: 10px;
+        height: 10px;
+    }
     #disciplinas h3{
         text-align: center ;
     }
     #disciplinas > div:first-of-type{
         align-self: center;
+        margin-bottom: 20px;
         width: 80%;
     }
     #disciplinas > div:last-of-type{
-        align-items: flex-start;
-        flex-direction: column;
         align-self: center;
-        width: 100%;
+        flex-direction: column;
+        width: 80%;
     }
     .disciplinas-lista{
-        width: 80%;
+        padding: 0 0 0 10px;
+        width: 100%;
         flex-direction: column;
         display: flex;
     }
     .disciplinas-lista ul{
-        margin: 0;
-        margin-left: 10px;
-        padding: 0;
+        margin: 5px 0 0 0;
+        padding: 0 0 0 15px;
         flex-direction: column;
         display: flex;
     }
+    .disciplinas-lista .content{
+        margin: 0;
+    }
+    .disciplinas-lista .content ul{
+        margin-bottom: 15px;
+    }
     #disciplinas button{
-        font-size: 12px;
+        text-align: left;
+        font-size: 10px;
     }
     /*seção docentes */
     #docentes h3{
@@ -739,24 +831,37 @@ header{
         margin-bottom: 50px;
     }
     #docentes{
+        margin-top: 30px;
         flex-direction: column;
+        align-items: center;
         display: flex;
         padding: 0;
     }
-    .docentes-card{
+    #docentes > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        width: 80%;
+    }
+    .docentes-card{ 
+        align-items: center;
+        display: flex;
         flex-direction: column;
     }
     #docentes div:first-of-type{
-        align-items: center;
-        flex-direction: column;
-    }
-    #docentes div{
-        align-items: center;
         flex-direction: column;
     }
     .docentes-card div:last-of-type{
+        width: auto;
         margin: 0;
-        width: 100px;
+    }
+    #docentes div:first-of-type{
+        margin-bottom: 20px;
+    }
+    .docentes-card a > img{
+        margin-top: 5px;
+        width: 20px;
     }
     /*seção contato */
     #contato{
@@ -764,11 +869,33 @@ header{
         padding: 0;
         display: flex;
     }
+    .redes-sociais{
+        align-content: center;
+        align-self: center;
+        width: 80%;        
+    }
+    .redes-sociais h4{
+        text-align: center;
+    }
+    .redes-sociais-links{
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .redes-sociais-links a{
+        padding: 10px 0 0 0;
+        font-size: 12px;
+        width: 40px;
+        height: 40px;
+    }
+    .contato-box{
+        align-self: center;
+        width: 80%;
+    }
     .contato-box h3{
         text-align: center;
     }
     .contato-box form{
-        width: 80%;
+        width: 100%;
         align-self: center;
     }
 }

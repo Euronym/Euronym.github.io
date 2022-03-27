@@ -16,6 +16,13 @@
         rel="stylesheet">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <title>Especialização em Cidades Inteligentes</title>
+    <script type="text/javascript">
+        var onloadCallback = function() {
+          grecaptcha.render('html_element', {
+            'sitekey' : 'your_site_key'
+          });
+        };
+      </script>
 </head>
 
 <body>
@@ -53,7 +60,7 @@
                 <a href="#docentes">DOCENTES</a>
                 <a href="#contato">CONTATO</a>
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+            <a onclick="hamburger()" href="javascript:void(0);" class="icon">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
@@ -67,6 +74,7 @@
             <div class="introducao-curso-box">
                 <div class="introducao-curso-texto">
                     <h3>Sobre o Curso</h3>
+                    <hr>
                     <div>
                         O curso de pós-graduação latu-senso GTIcs é organizado pelo Laboratório de Cidades
                         Inteligentes e Sustentáveis (LaCiS) em parceria com outras universidades e a empresa Konker
@@ -77,6 +85,7 @@
                 <div class="curso-box-texto">
                     <h3>Gestão de Tecnologias para Cidades Inteligentes e Sustentáveis (GTICs): Inteligência Artificial,
                         Computação em nuvem e Internet das Coisas</h3>
+                    <hr>
                     <div>
                         O curso tem como objetivo formar profissionais em GTICs capazes de atuar com forte embasamento
                         conceitual e prático, e de forma inovadora no mercado,
@@ -129,6 +138,7 @@
                     <div class="investimento-card-content">
                         <ul>
                             <li>Aulas remotas com professores renomados no Brasil</li>
+                            <br>
                             <li>Kit IoT individual para o desenvolvimento das atividades</li>
                         </ul>
                     </div>
@@ -471,7 +481,7 @@
                     <ul>
                         <li><strong>Professor(es) previsto(s)</strong>:<a target="_blank"
                                 href="http://lattes.cnpq.br/8273198217435163">Denis Lima do Rosário (UFPA)</a> e<a
-                                target="_blank" href="">Cristiano Bonato Both (UNISSINOS)</a> </li>
+                                target="_blank" href="">Cristiano Bonato Both (UNISINOS)</a> </li>
                         <li><button type="button" class="collapsible">
                                 <svg width="11" height="8" viewBox="0 0 11 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -1205,12 +1215,23 @@
             </div>
         </section>
         <section id="contato">
+            <div class="redes-sociais">
+                <h4>Dúvidas? Consulte nossas redes sociais.</h4>
+                <div class="redes-sociais-links">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+            </div>
             <div class="contato-box">
-                <h3>CONTATO</h3>
+                <h3>Contato</h3>
                 <form action="" method="post">
                     <input type="text" name="Nome" placeholder="Nome" id="">
                     <input type="email" name="" placeholder="E-mail" id="">
                     <textarea name="" id="" placeholder="Mensagem" cols="30" rows="10"></textarea>
+                    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+                    async defer>
+                    </script>
                     <div>
                         <input type="submit" value="Enviar">
                         <input type="reset" value="Apagar">
@@ -1218,6 +1239,7 @@
                 </form>
             </div>
         </section>
+        <p style="text-align: center;">Desenvolvido por <a style="font-weight: 700;color: #1E4697;"target="_blank" href="https://github.com/Euronym">Bruno Martins</a></p>
     </main>
     <script type="text/javascript" src="script.js"></script>
 </body>
