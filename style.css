@@ -29,7 +29,7 @@ body{
 main{
     max-width: 1440px;
     margin: 0 auto;
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     flex-direction: column;
     display: flex;
     height: 100%;
@@ -51,13 +51,34 @@ hr{
     margin-bottom: 15px;
 }
 .introducao-curso-box{
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
     display: flex;
-    flex-direction: row-reverse;
-    margin-bottom: 100px;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+.sobre-curso-img{
+    width: 50%;
+    display: flex;
+}
+.sobre-curso-img a{
+    margin-left: 100px;
+    margin-top: 20px;
+    padding: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+}
+.sobre-curso-img img{
+    max-width: 100%;
+    height: auto;
+    display: flex;
 }
 .introducao-curso-texto{
-    margin-right: 80px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -66,14 +87,13 @@ hr{
     align-self: flex-end;
 }
 .curso-box{
-    justify-content: flex-start;
     display: flex;
     flex-direction: row;
 }
 .img-smart-city{
-    margin-left: 150px;
     align-self: center;
     border-radius: 50%;
+    margin-right: 150px;
     height: 300px;
     width: 300px;
     display: flex;
@@ -296,7 +316,7 @@ hr{
     z-index: 9999;
     display: flex;
     flex-direction: row;
-    height: 80px;
+    height: 75px;
 }
 nav{
     margin-top: 5px;
@@ -338,13 +358,15 @@ nav ul li a:hover{
     width: auto;
     height: 100%;
     padding: 0;
-    margin: 0%;
+    margin: 0;
 }
-header div:first-of-type div h2{
+header div:first-of-type div > a{
+    font-weight: 700;
+    text-decoration: none;
     color: white;
     margin-left: 10px;
     margin-top: 0;
-    font-size: medium;
+    font-size: 14px;
 }
 header img{
     height: 50px;
@@ -357,7 +379,7 @@ header{
     justify-content: flex-start;
     flex-direction: column;
     display: flex;
-    height: 600px;
+    height: 650px;
 }
 .sticky{
     position: fixed;
@@ -373,7 +395,7 @@ header{
     display: flex;
     max-width: 1440px;
     width: 80%;
-    height: 600px;
+    height: 650px;
 }
 .disciplinas-lista a{
     margin-left: 3px;
@@ -397,7 +419,7 @@ header{
 #docentes{
     padding: 50px 100px 0 100px;
 }
-#docentes div:first-of-type{
+#docentes > div:first-of-type{
     flex-wrap: wrap;
     margin-bottom: 30px;
     display: flex;
@@ -415,8 +437,9 @@ header{
 }
 .docentes-card{
     margin-bottom: 30px;
-    width: 380px;
-    justify-content: flex-start;
+    width: 33%;
+    align-content: space-between;
+    justify-content: space-evenly;
     display: flex;
     flex-direction: row;
 }
@@ -464,6 +487,7 @@ header{
     height: auto;
 }
 .docentes-card div:last-of-type{
+    width: 200px;
     margin-top: 30px;
     margin-left: 20px;
     display: flex;
@@ -480,12 +504,35 @@ header{
     margin-top: 50px;
     align-self: center;
 }
+#contato > div{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.contato-image{
+    margin-top: 50px;
+    align-self: flex-start;
+    width: 50%;
+    display: flex;
+}
+.contato-image a{
+    border-style: solid;
+    border-radius: 50%;
+    border-color: transparent;
+    height: 400px;
+    width: 400px;
+}
+.contato-image img{
+    max-width: 100%;
+    height: auto;
+}
 .contato-box{
     flex-direction: column;
     justify-content: center;
     display: flex;
 }
-.contato-box h3{
+.contato-box h4{
+    color: #1E4697;
     margin: 0;
     align-self: center;
 }
@@ -596,6 +643,7 @@ header{
     #hamburgerNav{
         height: auto;
         display: flex;
+        justify-content: space-between;
     }
     #hamburgerNav div:first-of-type{
         font-size: 12px;
@@ -621,10 +669,10 @@ header{
         font-size: 70%;
     }
     #hamburgerLinks {
+        display: none;
         border-top-right-radius: 15px;
         z-index: 9999;
         background-color: #C0D2F7;
-        display: none;
         position: absolute;
         left: 70%;
         margin-top: 45px;
@@ -637,11 +685,9 @@ header{
         display: block;
     }
     .topnav a.icon {
+        cursor: pointer;
         background:none;
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
+        display: flex;
     }
     .topnav a:hover {
         background-color: #ddd;
