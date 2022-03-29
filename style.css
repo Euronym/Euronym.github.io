@@ -818,6 +818,12 @@ header{
         width: 100%;
         height: 300px;
     }
+    .investimento-card-content p {
+        margin-bottom: 5px;
+    }
+    .investimento-card-content br{
+        margin: 0;
+    }
     .investimento-card-title{
         font-size: 20px;
     }
