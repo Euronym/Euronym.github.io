@@ -59,21 +59,14 @@ hr{
     margin-bottom: 50px;
 }
 .sobre-curso-img{
+    margin-left: auto;
+    align-items: flex-end;
     width: 50%;
     display: flex;
 }
-.sobre-curso-img a{
-    margin-left: 100px;
-    margin-top: 20px;
-    padding: 0;
-    border-color: transparent;
-    border-style: solid;
-    border-radius: 50%;
-    width: 400px;
-    height: 400px;
-}
 .sobre-curso-img img{
-    max-width: 100%;
+    margin-left: auto;
+    max-width: 80%;
     height: auto;
     display: flex;
 }
@@ -508,19 +501,15 @@ header{
 }
 #contato > div{
     align-items: center;
+    justify-content: center;
     display: flex;
     flex-direction: row;
 }
 .contato-image{
-    margin-top: 50px;
-    align-self: flex-start;
     width: 50%;
     display: flex;
 }
 .contato-image a{
-    border-style: solid;
-    border-radius: 50%;
-    border-color: transparent;
     height: 400px;
     width: 400px;
 }
@@ -635,6 +624,9 @@ header{
     
 }
 @media screen and (max-width:600px){
+    header{
+        height: 600px;
+    }
     body{
         font-size: 16px;
         overflow-x: hidden;
@@ -648,7 +640,7 @@ header{
         justify-content: space-between;
     }
     #hamburgerNav div:first-of-type{
-        font-size: 8px;
+        font-size: 10px;
         color: white;
         display: flex;
         width: auto;
@@ -657,11 +649,11 @@ header{
     }
     #hamburgerNav div:first-of-type{
         height: auto;
-        padding: 0;
     }
     #hamburgerNav div:first-of-type img{
-        margin-top: 3px;
         max-width: 30%;
+        margin-top: 5px;
+        padding: 5px;
         height: 80%;
     }
     .topnav {
@@ -678,27 +670,26 @@ header{
         position: absolute;
         left: 70%;
         margin-top: 45px;
+        height: auto;
     }
     .topnav a {
         color: white;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 17px;
+        font-size: 24px;
         display: block;
     }
-    .topnav a.icon {
-        cursor: pointer;
-        background:none;
+    .icon {
         display: flex;
     }
     .topnav a:hover {
         background-color: #ddd;
-        color: black;
     }
     .active {
         background: none;
     }
     .carrossel{
+        height: 600px;
         margin: 0;
         width: 100%;
         justify-content: space-evenly;
@@ -747,7 +738,7 @@ header{
     .curso-box{
         align-self: center;
         width: 80%;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .curso-box-texto{
         width: 100%;
@@ -756,14 +747,9 @@ header{
         text-align: left;
     }
     .sobre-curso-img{
+        margin: 50px 0 50px 0;
         align-self: center;
         width: 100%;
-    }
-    .sobre-curso-img a{
-        margin: 0;
-        display: flex;
-        width: 100%;
-        height: auto;
     }
     .sobre-curso-img img{
         display: flex;
@@ -791,8 +777,8 @@ header{
     }
     #inscricoes a{
         width: auto;
-        height: 30px;
-        padding: 5px;
+        height: 40px;
+        padding: 8px;
     }
     /*seção investimento */
     #investimento{
@@ -810,6 +796,9 @@ header{
         margin: 0;
         width: 80%;
         flex-direction: column;
+    }
+    .investimento-card-title{
+        height: 150px;
     }
     .investimento-card{
         padding: 12px;
