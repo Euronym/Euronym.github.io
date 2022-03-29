@@ -107,7 +107,6 @@ hr{
 #inscricoes{
     padding: 50px 100px 0 100px;
 }
-
 #inscricoes > div{
     width: 50%;
 }
@@ -402,6 +401,9 @@ header{
     color: black;
     text-decoration: underline dotted solid;
 }
+.disciplinas-lista button{
+    font-weight: 700;
+}
 .disciplinas-lista a:hover{
     text-decoration: none;
 }
@@ -646,7 +648,7 @@ header{
         justify-content: space-between;
     }
     #hamburgerNav div:first-of-type{
-        font-size: 12px;
+        font-size: 8px;
         color: white;
         display: flex;
         width: auto;
@@ -717,33 +719,48 @@ header{
     }
     /*SEÇÃO SOBRE */
     #sobre{
+        display: flex;
         padding: 0;
     }
     .introducao-curso-box{
+        align-self: center;
+        width: 80%;
+        flex-direction: column;
         justify-content: center;
         display: flex;
         margin: 30px 0 30px 0;
     }
-    .introducao-curso-texto{
-        width: 80%;
+    .img-smart-city{
         margin: 0;
     }
-    .curso-box{
-        align-items: center;
-        flex-direction: column-reverse;
+    .introducao-curso-texto{
+        align-self: center;
+        width: 100%;
+        margin: 30px 0 0 0;
     }
-    .curso-box-texto{
+    .curso-box{
         align-self: center;
         width: 80%;
+        flex-direction: column;
     }
-    .img-smart-city{
-        justify-content: center;
-        border-radius: 0;
+    .curso-box-texto{
+        width: 100%;
+    }
+    .curso-box-texto h3{
+        text-align: left;
+    }
+    .sobre-curso-img{
+        align-self: center;
+        width: 100%;
+    }
+    .sobre-curso-img a{
+        margin: 0;
         display: flex;
-        width: 80%;
-        margin: 0 0 30px 0;
+        width: 100%;
+        height: auto;
     }
-    .img-smart-city img{
+    .sobre-curso-img img{
+        display: flex;
         max-width: 100%;
         height: auto;
     }
@@ -767,8 +784,8 @@ header{
         width: auto;
     }
     #inscricoes a{
-        width: 100px;
-        height: 25px;
+        width: auto;
+        height: 30px;
         padding: 5px;
     }
     /*seção investimento */
@@ -818,7 +835,7 @@ header{
     }
     #calendario > div button{
         padding: 5px;
-        font-size: 18px;
+        font-size: 14px;
         width: 100%;
     }
     #calendario > div{
@@ -853,6 +870,16 @@ header{
         width: 100%;
         flex-direction: column;
         display: flex;
+    }
+    .disciplinas-lista{
+        font-size: 14px;
+    }
+    .disciplinas-lista strong{
+        font-size: 16px;
+    }
+    .disciplinas-lista button{
+        font-weight: 700;
+        font-size: 14px !important;
     }
     .disciplinas-lista ul{
         margin: 5px 0 0 0;
@@ -914,10 +941,32 @@ header{
         padding: 0;
         display: flex;
     }
+    #contato h3{
+        text-align: center;
+        margin-bottom: 0;
+    }
+    #contato > div{
+        width: 80%;
+        align-self: center;
+        flex-direction: column;
+    }
+    .contato-image{
+        width: 100%;
+        align-self: center;
+    }
+    .contato-image a{
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+    .contato-image img{
+        max-width: 100%;
+        height: auto;
+    }
     .redes-sociais{
         align-content: center;
         align-self: center;
-        width: 80%;        
+        width: 100%;
     }
     .redes-sociais h4{
         text-align: center;
@@ -927,14 +976,14 @@ header{
         width: 100%;
     }
     .redes-sociais-links a{
-        padding: 10px 0 0 0;
+        padding: 12px 0 0 0;
         font-size: 18px;
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
     }
     .contato-box{
         align-self: center;
-        width: 80%;
+        width: 100%;
     }
     .contato-box h3{
         text-align: center;
