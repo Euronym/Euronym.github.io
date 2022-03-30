@@ -71,13 +71,15 @@ hr{
     display: flex;
 }
 .introducao-curso-texto{
+    text-align: justify;
+    text-justify: inter-word;
     height: 200px;
     display: flex;
     flex-direction: column;
     width: 50%;
 }
 .introducao-curso-texto h3{
-    align-self: flex-end;
+    align-self: flex-start;
 }
 .curso-box{
     display: flex;
@@ -92,6 +94,8 @@ hr{
     display: flex;
 }
 .curso-box-texto{
+    text-align: justify;
+    text-justify: inter-word;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -395,6 +399,7 @@ header{
     text-decoration: underline dotted solid;
 }
 .disciplinas-lista button{
+    width: auto;
     font-weight: 700;
 }
 .disciplinas-lista a:hover{
@@ -660,30 +665,30 @@ header{
         position: relative;
     }
     #hamburgerLinks a{
-        font-size: 70%;
+        text-decoration: none;
+        font-size: 12px;
+        color: white;
+        padding: 10px;
     }
     #hamburgerLinks {
+        border-radius: 5px;
+        text-align: center;
         display: none;
         border-top-right-radius: 15px;
         z-index: 9999;
         background-color: #C0D2F7;
         position: absolute;
-        left: 70%;
+        left: 65%;
         margin-top: 45px;
         height: auto;
     }
-    .topnav a {
+    .icon {
+        z-index: 99999;
         color: white;
         padding: 14px 16px;
-        text-decoration: none;
         font-size: 24px;
-        display: block;
-    }
-    .icon {
+        text-decoration: none;
         display: flex;
-    }
-    .topnav a:hover {
-        background-color: #ddd;
     }
     .active {
         background: none;
@@ -835,7 +840,7 @@ header{
         width: 100%;
     }
     #calendario > div button{
-        padding: 5px;
+        padding: 10px;
         font-size: 14px;
         width: 100%;
     }
