@@ -418,15 +418,12 @@ header{
     text-decoration: none;
 }
 .carrossel img{
-    margin-right: 10px;
-    align-self: center;
-    width: 50%;
-    height: auto;
-    display: flex;
-}
-.carrossel img:last-child{
     margin-left: 30px;
     max-width: 40%;
+    align-self: center;
+    width: 40%;
+    height: auto;
+    display: flex;
 }
 /*SECTION DOCENTES */
 #docentes{
