@@ -51,7 +51,7 @@ hr{
     margin-bottom: 15px;
 }
 .introducao-curso-box{
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     height: auto;
     display: flex;
@@ -367,9 +367,9 @@ header img{
     width: 50px;
 }
 header{
+    background-color: #C0D2F7;
     margin: 0 auto;
     font-family: 'Oxygen', sans-serif;
-    background-color: #7FA4F1;
     justify-content: flex-start;
     flex-direction: column;
     display: flex;
@@ -382,14 +382,28 @@ header{
 }
 .carrossel{
     position: absolute;
-    margin-left: 50px;
-    justify-content: flex-start;
+    justify-content: space-around;
     flex-direction: row;
     align-self: center;
     display: flex;
     max-width: 1440px;
     width: 80%;
     height: 650px;
+}
+.carrossel-text{
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+.carrossel-text h4{
+    color: black;
+}
+.carrossel-text h1{
+    font-size: 48px;
+    color: #1E4697;
+}
+.carrossel-text h4, h1{
+    margin: 0;
 }
 .disciplinas-lista a{
     margin-left: 3px;
@@ -404,6 +418,7 @@ header{
     text-decoration: none;
 }
 .carrossel img{
+    margin-right: 10px;
     align-self: center;
     width: 50%;
     height: auto;
