@@ -917,25 +917,22 @@ header{
         padding: 0;
     }
     #docentes > div{
+        justify-content: space-around;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        width: 80%;
+        flex-direction: row;
+        width: 100%;
     }
     .docentes-card{ 
+        width: 40%;
         align-items: center;
         display: flex;
-        flex-direction: column;
-    }
-    #docentes div:first-of-type{
         flex-direction: column;
     }
     .docentes-card div:last-of-type{
         width: auto;
         margin: 0;
     }
-    #docentes div:first-of-type{
+    .docentes-card div:first-of-type{
         margin-bottom: 20px;
     }
     .docentes-card a > img{
